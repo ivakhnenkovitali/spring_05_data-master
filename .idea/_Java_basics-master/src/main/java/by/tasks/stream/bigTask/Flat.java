@@ -4,7 +4,6 @@ public class Flat {
     private String address;
     private double area;
     private int price;
-
     public Flat() {
     }
     public Flat(int id, String address, double area, int price) {
@@ -13,7 +12,6 @@ public class Flat {
         this.area = area;
         this.price = price;
     }
-
     public int getId() {
         return id;
     }

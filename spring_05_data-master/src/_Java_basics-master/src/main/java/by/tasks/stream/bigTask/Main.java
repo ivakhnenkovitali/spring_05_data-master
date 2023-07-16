@@ -8,15 +8,12 @@ public class Main {
         People people1 = new People(1, "Том");
         people1.addFlat(new Flat(1, "123 Ооодлодл", 75.0, 250000));
         people1.addFlat(new Flat(2, "345 Тошсвд", 60.0, 160000));
-
         People people2 = new People(2, "Тим");
         people2.addFlat(new Flat(3, "678 Лллл", 85.0, 200000));
         people2.addFlat(new Flat(4, "910 Олглгг", 95.0, 300000));
-
         People people3 = new People(3, "Катя");
         people3.addFlat(new Flat(1, "112 Орлол", 100.0, 253000));
         people3.addFlat(new Flat(2, "132 Кпоррл", 60.0, 150000));
-
         List<People> people = List.of(people1, people2, people3);
 
         // Найти все квартиры площадь которых больше 80

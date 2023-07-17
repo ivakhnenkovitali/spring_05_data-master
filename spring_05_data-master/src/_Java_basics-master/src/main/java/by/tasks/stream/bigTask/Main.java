@@ -15,34 +15,29 @@ public class Main {
         people3.addFlat(new Flat(1, "112 Орлол", 100.0, 253000));
         people3.addFlat(new Flat(2, "132 Кпоррл", 60.0, 150000));
         List<People> people = List.of(people1, people2, people3);
-
         // Найти все квартиры площадь которых больше 80
         people.stream()
                 .flatMap(p -> p.getFlats().stream())// зайди в людей и возми там все квартиры
                 .filter(f -> f.getArea() > 80)
                 //.collect(toList());
                 .toList();
-
         // Найди всех людей у которых есть квартиры по адрессу 910 Олглгг
         people.stream()
                 .filter(p -> p.getFlats().stream()
                         .anyMatch(f -> f.getAddress().equals("910 Олглгг")))
                 .toList();
-
         // Получить список всех адрессов квартир
         people.stream()
                 .flatMap(f -> f.getFlats().stream())
                 .map(a -> a.getAddress())
                 .distinct()
                 .toList();
-
         // Найти общую площадь всех квартир для каждого человека
         // ключ - человек, значение - кол-во кв метров
         Map<String, Double> map =people.stream()
                 // из листа делаем map
                 .collect(Collectors.toMap(k->k.getName(), v->v.getFlats().stream()
                         .mapToDouble(ar -> ar.getArea()).sum())); // или reduce
-
         //Найти самую догорую квартиру из  всех
         Flat flat = people.stream()
                 // из листа реrsona спустились до квартир

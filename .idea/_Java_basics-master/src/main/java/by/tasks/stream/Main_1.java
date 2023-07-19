@@ -1,10 +1,8 @@
 package by.tasks.stream;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-
 public class Main_1 {
     public static void main(String[] args) {
         // дан список целых чисел
@@ -47,7 +45,5 @@ public class Main_1 {
                 .distinct()
                 .count();
         System.out.println(distinctCount);
-
-
     }
 }

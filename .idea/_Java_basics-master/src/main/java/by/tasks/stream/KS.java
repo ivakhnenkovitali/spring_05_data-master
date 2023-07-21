@@ -1,12 +1,10 @@
 package by.tasks.stream;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static java.util.Collections.sort;
-
 public class KS {
     public static void main(String[] args) {
         // преобразовать входной список так,
@@ -15,7 +13,6 @@ public class KS {
         System.out.println(makeKsFirstAndSort(list));
         System.out.println(makeKsFirstAndSort1(list));
     }
-
     // вариант решения 1
     public static List<String> makeKsFirstAndSort(List<String> list) {
         List<String> list1 = new ArrayList<>();

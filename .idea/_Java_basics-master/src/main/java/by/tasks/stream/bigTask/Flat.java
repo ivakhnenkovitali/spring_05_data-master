@@ -1,5 +1,4 @@
 package by.tasks.stream.bigTask;
-
 public class Flat {
     private int id;
     private String address;
@@ -8,7 +7,6 @@ public class Flat {
 
     public Flat() {
     }
-
     public Flat(int id, String address, double area, int price) {
         this.id = id;
         this.address = address;
@@ -19,31 +17,24 @@ public class Flat {
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
-
     public String getAddress() {
         return address;
     }
-
     public void setAddress(String address) {
         this.address = address;
     }
-
     public double getArea() {
         return area;
     }
-
     public void setArea(double area) {
         this.area = area;
     }
-
     public int getPrice() {
         return price;
     }
-
     public void setPrice(int price) {
         this.price = price;
     }

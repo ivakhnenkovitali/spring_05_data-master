@@ -11,7 +11,6 @@ public class Main {
     // Текст заканчивается точкой
     // Составить процедуру которая, в заданном тексте находит слова оканчивающиеся заданной буквой
     // В качестве результата вывести исходный текст, найденные слова и их кол-во
-
     public static List<String> findWorld(String text, char endChar) {
         // список найденных слов
         List<String> resultWords = new ArrayList<>();

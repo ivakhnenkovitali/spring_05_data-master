@@ -1,9 +1,7 @@
 package by.tasks.stream;
-
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
 public class Stream_2 {
     public static void main(String[] args) {
         // сгрупировать данные в map, где ключ - длинна строки, значение - СПИСОК строк такой длинны
@@ -24,8 +22,6 @@ public class Stream_2 {
 //`groupingBy` удобно использовать, когда нужно собирать данные в `Map` по какому-либо критерию.
 //- Метод `collect` - это терминальная операция, которая завершает работу со стримом и
 // предоставляет готовый результат (в данном случае `Map`).
-
-
         // сгруппировать данные в map, где ключ - длинна строки, значение КОЛИЧЕСТВО строк с такой длинной
         List<String> strings1 = List.of("string", "apple", "banane", "cat", "dog", "Java",
                 "hello", "world", "car", "home");

@@ -13,6 +13,5 @@ public class Stream_3 {
                 .peek(System.out::println)// весна
                 .collect(Collectors.joining(", ")); //лето, зима, осень, весна
         System.out.println(str);
-
     }
 }

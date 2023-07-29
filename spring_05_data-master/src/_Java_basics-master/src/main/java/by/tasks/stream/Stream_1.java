@@ -1,9 +1,7 @@
 package by.tasks.stream;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-
 public class Stream_1 {
     public static void main(String[] args) {
         List<String> list = Arrays.asList("Москва", "Архангельск", "Астрахань", "Минск", "Антверпень");
@@ -13,11 +11,8 @@ public class Stream_1 {
                 .map(String::toUpperCase)       // переводим в вверхний регистр
                 .sorted()                         // сортируем
                 .collect(Collectors.toList());    //собирает элементы вашего стрима в список
-
         System.out.println(listRes);
-
         // =>[АНТВЕРПЕНЬ, АРХАНГЕЛЬСК, АСТРАХАНЬ]
-
         //collect - преобразования элементов потока в другую коллекцию,
         // Это терминальная операция
         // нужно создать список и добавить в него элементы.

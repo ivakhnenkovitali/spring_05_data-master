@@ -1,18 +1,14 @@
 package by.tasks.stream;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-
 import static java.util.Collections.sort;
-
 public class KS {
     public static void main(String[] args) {
         List<String> list = List.of("f", "z", "y", "k", "t", "r", "s", "a");
         System.out.println(makeKsFirstAndSort(list));
         System.out.println(makeKsFirstAndSort1(list));
     }
-
     // преобразовать входной список так,
     // чтобы первым вывелся символы k s а потом в отсортированном виде
     public static List<String> makeKsFirstAndSort(List<String> list) {

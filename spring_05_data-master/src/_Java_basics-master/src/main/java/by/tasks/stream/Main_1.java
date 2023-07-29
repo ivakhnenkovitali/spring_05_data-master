@@ -1,15 +1,12 @@
 package by.tasks.stream;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
-
 public class Main_1 {
     public static void main(String[] args) {
         // дан список целых чисел
         // для каждого числа вывести в консоль само число + количество его дубликатов
-
         List<Integer> list = List.of(1, 2, 5, 4, 4, 5, 2, 3, 6, 5);
         list.stream()
                 //  .collect(Collectors.groupingBy(k->k))// сгруппировали

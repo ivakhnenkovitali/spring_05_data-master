@@ -1,20 +1,15 @@
 package by.tasks.stream.bigTask;
-
 import java.util.List;
-
 public class People {
     private int id;
     private String name;
     private List<Flat> flats;
-
     public People() {
     }
-
     public People(int id, String name) {
         this.id = id;
         this.name = name;
     }
-
     public void addFlat(Flat flat){
         flats.add(flat);
     }

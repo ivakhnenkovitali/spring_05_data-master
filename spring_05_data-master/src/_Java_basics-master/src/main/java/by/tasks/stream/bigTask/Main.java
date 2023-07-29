@@ -1,10 +1,8 @@
 package by.tasks.stream.bigTask;
-
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
 public class Main {
     public static void main(String[] args) {
         People people1 = new People(1, "Том");

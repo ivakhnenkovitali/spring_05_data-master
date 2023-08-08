@@ -31,6 +31,8 @@ public class AppConfig {
         return transactionManager;
     }
 
+
+
     @Bean
     public Airplane boeing736() {
         return new Airplane("Boeing-736", 150);

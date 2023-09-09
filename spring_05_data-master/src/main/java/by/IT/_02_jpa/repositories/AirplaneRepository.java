@@ -8,7 +8,6 @@ import java.util.List;
 
 @Repository
 public interface AirplaneRepository extends CrudRepository<Airplane, Integer> {
-
     Airplane findByModel(String model);
     Airplane findByModelAndPlace(String model, int place);
     Airplane findByModelLike(String model);

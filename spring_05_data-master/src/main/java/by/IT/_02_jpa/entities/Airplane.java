@@ -1,5 +1,4 @@
 package by.IT._02_jpa.entities;
-
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;

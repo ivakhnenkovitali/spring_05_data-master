@@ -15,9 +15,7 @@ public class Main {
         datasource.setUrl("jdbc:mysql://localhost:3306/po_2301");
         datasource.setUsername("root");
         datasource.setPassword("");
-
         var jdbcTemplate = new JdbcTemplate(datasource);
-
         var users = jdbcTemplate.query("SELECT * FROM user", new UserRowMapping());
         users.forEach(System.out::println);
         System.out.println("______________________");

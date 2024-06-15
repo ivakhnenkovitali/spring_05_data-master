@@ -7,8 +7,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 
-
-
 @Repository
 public interface AirplaneRepository extends CrudRepository<Airplane, Integer> {
     //find, get, query, delete, update, exist (start word)

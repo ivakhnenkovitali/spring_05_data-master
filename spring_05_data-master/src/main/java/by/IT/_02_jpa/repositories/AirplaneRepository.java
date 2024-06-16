@@ -14,5 +14,4 @@ public interface AirplaneRepository extends CrudRepository<Airplane, Integer> {
     Airplane findByModelAndPlace(String model, int place);
     Airplane findByModelLike(String model);
     List<Airplane> findByPlaceBetween(int start, int end);
-
 }

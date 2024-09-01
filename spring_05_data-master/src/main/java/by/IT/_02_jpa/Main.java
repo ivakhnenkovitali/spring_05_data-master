@@ -4,7 +4,6 @@ import by.itclass._02_jpa.configs.AppConfig;
 import by.itclass._02_jpa.entities.Airplane;
 import by.itclass._02_jpa.repositories.AirplaneRepository;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
 public class Main {
     public static void main(String[] args) {
         var ctx = new AnnotationConfigApplicationContext(AppConfig.class);

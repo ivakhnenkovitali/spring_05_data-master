@@ -8,7 +8,6 @@ public class Main {
     public static void main(String[] args) {
         var ctx = new AnnotationConfigApplicationContext(AppConfig.class);
         var repository = ctx.getBean(AirplaneRepository.class);
-
         var boeing = repository.findByModelLike("Boe%");
         System.out.println(boeing);
         System.out.println("___________________");

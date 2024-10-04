@@ -25,7 +25,6 @@ public class Main {
         }
         return resultWords;
     }
-
     // замена метода как вариант
     public static List<String> streamFindWorld(String text, char endChar) {
         return Arrays.stream(text.split("[\\s,!?]"))

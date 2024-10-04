@@ -1,26 +1,21 @@
 package by.tasks.stream;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
 public class Stream_Map {
     public static void main(String[] args) {
         //Необходимо найти сумму всех чисел, начиная с пятого по порядку, которые делятся на 3 или 5.
 // Но есть дополнительное условие: если таких чисел больше 10, то складываешь только первые 10 из них.
 //================================================================================
      /*   List<Integer> numbers = Arrays.asList(1, 15, 2, 3, 7, 20, 8, 9, 12, 5, 30, 4, 11, 18, 25);
-
         numbers.stream()
                 .skip(5)
                 .filter(s->s%3 ==0 ||s%5 == 0)
                 .limit(10)
                 .sum();
-
-
 
 // ================================================================================
 //У вас есть список заказов, где каждый заказ имеет идентификатор клиента и сумму заказа.

@@ -49,8 +49,6 @@ public class Main {
                         .orElse(null);
         // orElse сработает если будет null в квартире и вернет просто null (не из квартиры)
         // это для того чтобы не выпала ошибка
-
-
         // Получить площади квартир отсортированных в порядке убывания
         List<Flat> flatSort = people.stream()
                 .flatMap(f->f.getFlats().stream())

@@ -55,6 +55,5 @@ public class Main {
                 //comparingDouble потомучто площадь это double
                 .sorted(Comparator.comparingDouble(Flat::getArea).reversed())
                 .toList();
-
     }
 }

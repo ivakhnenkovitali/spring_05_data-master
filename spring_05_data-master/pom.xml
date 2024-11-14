@@ -6,6 +6,12 @@
     <groupId>by.itclass</groupId>
     <artifactId>spring_2301_05_data</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+
+
+
+
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.data</groupId>
